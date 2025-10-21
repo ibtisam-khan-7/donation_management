@@ -1,0 +1,35 @@
+# ------------------------------
+# Python & Flask Project Ignore
+# ------------------------------
+
+# Virtual environment folder
+venv/
+ENV/
+env/
+
+# Environment variables file
+.env
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# IDE / Editor settings
+.vscode/
+.idea/
+
+# macOS & Windows system files
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / optimized files
+*.so
+
+# Local database or temp storage
+instance/
+*.sqlite3
