@@ -4,8 +4,7 @@ from controllers.user_controller import (
     delete_user_controller,
     update_user_controller,
 )
-from utils.auth_middleware import token_required
-from utils.role_required import role_required
+from utils.auth_middleware import token_required, role_required
 
 user_routes = Blueprint("user_routes", __name__)
 

@@ -31,8 +31,10 @@ def update_user_controller(user_id, data):
         update_fields = {}
         if "name" in data:
             update_fields["name"] = data["name"]
-        if "role" in data:
+        elif "role" in data:
             update_fields["role"] = data["role"]
+        elif "email" in data:
+            update_fields["email"] = data["email"] 
 
         if not update_fields:
             return jsonify({"error": "No valid fields to update"}), 400
